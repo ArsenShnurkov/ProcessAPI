@@ -37,10 +37,23 @@
     <Compile Include="Hardware\MachineInfo.cs" />
     <Compile Include="Hardware\ProcessorInfo.cs" />
     <Compile Include="Hardware\ProcessorType.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="UnderlayingAPI\Windows\Process.cs" />
+    <Compile Include="UnderlayingAPI\MOSA\Process.cs" />
+    <Compile Include="UnderlayingAPI\Linux\Process.cs" />
+>>>>>>> origin/master
     <Compile Include="Hardware\MachineType.cs" />
     <Compile Include="Hardware\CoreType.cs" />
     <Compile Include="Hardware\ClusterType.cs" />
     <Compile Include="Thread.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Setup\ClusterSet.cs" />
+    <Compile Include="Setup\CoreSet.cs" />
+    <Compile Include="Setup\MachineSet.cs" />
+    <Compile Include="Setup\ProcessorSet.cs" />
+>>>>>>> origin/master
     <Compile Include="Process.cs" />
     <Compile Include="Processes\IMuliclusterProcess.cs" />
     <Compile Include="Processes\IMulticoreProcess.cs" />
@@ -57,6 +70,7 @@
     <Compile Include="Scheduler.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Priorities\PriorityExtensionClass.cs" />
+<<<<<<< HEAD
     <Compile Include="Sets\ClusterSet.cs" />
     <Compile Include="Sets\CoreSet.cs" />
     <Compile Include="Sets\MachineSet.cs" />
@@ -69,10 +83,13 @@
     <Compile Include="ProcessGroup.cs" />
     <Compile Include="Pipeline\LinkType.cs" />
     <Compile Include="Pipeline\Link.cs" />
+=======
+>>>>>>> origin/master
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Hardware\" />
+<<<<<<< HEAD
     <Folder Include="Processes\" />
     <Folder Include="Schedulers\" />
     <Folder Include="Priorities\" />
@@ -85,5 +102,12 @@
       <Project>{4AD02AED-1DA1-4600-8AC0-CEC0BA54A66C}</Project>
       <Name>ProcessAPI.Linux</Name>
     </ProjectReference>
+=======
+    <Folder Include="UnderlayingAPI\" />
+    <Folder Include="Setup\" />
+    <Folder Include="Processes\" />
+    <Folder Include="Schedulers\" />
+    <Folder Include="Priorities\" />
+>>>>>>> origin/master
   </ItemGroup>
 </Project>

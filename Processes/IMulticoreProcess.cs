@@ -4,8 +4,11 @@
 
 // https://github.com/mono/mono/blob/master/mcs/class/System/System.Diagnostics/Process.cs
 
+<<<<<<< HEAD
 // 4.6.1, https://github.com/Microsoft/referencesource/blob/master/System/services/monitoring/system/diagnosticts/Process.cs
 
+=======
+>>>>>>> origin/master
 namespace ProcessAPI
 {
 	public interface IMulticoreProcess
