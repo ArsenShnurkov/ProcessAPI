@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BC54707-6F5A-4927-9023-A273EEEF8EE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ProcessAPI</RootNamespace>
+    <AssemblyName>ProcessAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Hardware\ClusterInfo.cs" />
+    <Compile Include="Hardware\CoreInfo.cs" />
+    <Compile Include="Hardware\MachineInfo.cs" />
+    <Compile Include="Hardware\ProcessorInfo.cs" />
+    <Compile Include="Hardware\ProcessorType.cs" />
+    <Compile Include="Hardware\MachineType.cs" />
+    <Compile Include="Hardware\CoreType.cs" />
+    <Compile Include="Hardware\ClusterType.cs" />
+    <Compile Include="Thread.cs" />
+    <Compile Include="Process.cs" />
+    <Compile Include="Processes\IMuliclusterProcess.cs" />
+    <Compile Include="Processes\IMulticoreProcess.cs" />
+    <Compile Include="Processes\IMultimachineProcess.cs" />
+    <Compile Include="Processes\IMultiprocessorProcess.cs" />
+    <Compile Include="Schedulers\IMulticlusterScheduler.cs" />
+    <Compile Include="Schedulers\IMultiprocessorScheduler.cs" />
+    <Compile Include="Schedulers\IMulticoreScheduler.cs" />
+    <Compile Include="Schedulers\IMultimachineScheduler.cs" />
+    <Compile Include="Schedulers\DefaultMulticoreSchedulerAPI.cs" />
+    <Compile Include="Schedulers\DefaultMultiprocessorSchedulerAPI.cs" />
+    <Compile Include="Schedulers\DefaultMultimachineSchedulerAPI.cs" />
+    <Compile Include="Schedulers\DefaultMulticlusterSchedulerAPI.cs" />
+    <Compile Include="Scheduler.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="Priorities\PriorityExtensionClass.cs" />
+    <Compile Include="Sets\ClusterSet.cs" />
+    <Compile Include="Sets\CoreSet.cs" />
+    <Compile Include="Sets\MachineSet.cs" />
+    <Compile Include="Sets\ProcessorSet.cs" />
+    <Compile Include="ProcessThreadCollection.cs" />
+    <Compile Include="Pipeline\PipelineExtensions.cs" />
+    <Compile Include="Pipeline\PipelineNode.cs" />
+    <Compile Include="Terminal\Terminal.cs" />
+    <Compile Include="Terminal\Session.cs" />
+    <Compile Include="ProcessGroup.cs" />
+    <Compile Include="Pipeline\LinkType.cs" />
+    <Compile Include="Pipeline\Link.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Hardware\" />
+    <Folder Include="Processes\" />
+    <Folder Include="Schedulers\" />
+    <Folder Include="Priorities\" />
+    <Folder Include="Sets\" />
+    <Folder Include="Pipeline\" />
+    <Folder Include="Terminal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ProcessAPI.Linux\ProcessAPI.Linux.csproj">
+      <Project>{4AD02AED-1DA1-4600-8AC0-CEC0BA54A66C}</Project>
+      <Name>ProcessAPI.Linux</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
