@@ -3,24 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessAPI", "ProcessAPI.csproj", "{9BC54707-6F5A-4927-9023-A273EEEF8EE3}"
 EndProject
-<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessAPI.Linux", "ProcessAPI.Linux\ProcessAPI.Linux.csproj", "{4AD02AED-1DA1-4600-8AC0-CEC0BA54A66C}"
 EndProject
-=======
->>>>>>> origin/master
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-<<<<<<< HEAD
 		{4AD02AED-1DA1-4600-8AC0-CEC0BA54A66C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4AD02AED-1DA1-4600-8AC0-CEC0BA54A66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AD02AED-1DA1-4600-8AC0-CEC0BA54A66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AD02AED-1DA1-4600-8AC0-CEC0BA54A66C}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
->>>>>>> origin/master
 		{9BC54707-6F5A-4927-9023-A273EEEF8EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9BC54707-6F5A-4927-9023-A273EEEF8EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BC54707-6F5A-4927-9023-A273EEEF8EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
