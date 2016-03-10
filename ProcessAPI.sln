@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessAPI", "ProcessAPI.csproj", "{9BC54707-6F5A-4927-9023-A273EEEF8EE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessAPI.Linux", "ProcessAPI.Linux\ProcessAPI.Linux.csproj", "{4AD02AED-1DA1-4600-8AC0-CEC0BA54A66C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessLib.Linux", "ProcessAPI.Linux\ProcessLib.Linux.csproj", "{4AD02AED-1DA1-4600-8AC0-CEC0BA54A66C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter", "Starter\Starter.csproj", "{E5EE110E-4A57-46C8-AC95-2FA24EEEF88A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessLib", "ProcessLib\ProcessLib.csproj", "{4B449F13-42E3-45CB-9DBA-EB5A2156077A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,17 @@ Global
 		{4AD02AED-1DA1-4600-8AC0-CEC0BA54A66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AD02AED-1DA1-4600-8AC0-CEC0BA54A66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AD02AED-1DA1-4600-8AC0-CEC0BA54A66C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B449F13-42E3-45CB-9DBA-EB5A2156077A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B449F13-42E3-45CB-9DBA-EB5A2156077A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B449F13-42E3-45CB-9DBA-EB5A2156077A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B449F13-42E3-45CB-9DBA-EB5A2156077A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9BC54707-6F5A-4927-9023-A273EEEF8EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9BC54707-6F5A-4927-9023-A273EEEF8EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BC54707-6F5A-4927-9023-A273EEEF8EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BC54707-6F5A-4927-9023-A273EEEF8EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5EE110E-4A57-46C8-AC95-2FA24EEEF88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5EE110E-4A57-46C8-AC95-2FA24EEEF88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5EE110E-4A57-46C8-AC95-2FA24EEEF88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5EE110E-4A57-46C8-AC95-2FA24EEEF88A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

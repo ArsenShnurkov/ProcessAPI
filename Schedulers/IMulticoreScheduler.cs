@@ -7,5 +7,6 @@ namespace ProcessAPI
 		IMulticoreProcess CurrentProcess {get ;}
 		int GetAffinity(IMulticoreProcess p);
 		void SetAffinity(IMulticoreProcess p, CoreSet affinity);
+		IMulticoreProcess Start(IProcessStartInfo psi);
 	}
 }

@@ -10,6 +10,11 @@ namespace ProcessAPI
 
 		#region IMultimachineScheduler implementation
 
+		public IMultimachineProcess Start (IProcessStartInfo psi)
+		{
+			throw new NotImplementedException ();
+		}
+
 		public IMultimachineProcess CurrentProcess {
 			get {
 				throw new NotImplementedException ();

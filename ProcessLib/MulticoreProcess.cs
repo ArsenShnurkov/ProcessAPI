@@ -1,20 +1,19 @@
 ﻿using System;
 
+// https://github.com/mono/mono/blob/master/mcs/class/Mono.Posix/Mono.Unix/UnixProcess.cs
+
+// https://github.com/mono/mono/blob/master/mcs/class/System/System.Diagnostics/Process.cs
+
+// 4.6.1, https://github.com/Microsoft/referencesource/blob/master/System/services/monitoring/system/diagnosticts/Process.cs
+
 namespace ProcessAPI
 {
-	public class Process : IMulticoreProcess
+	public class MulticoreProcess  : IMulticoreProcess
 	{
-		#region IMulticoreProcess implementation
-		public IMulticoreScheduler MulticoreScheduler {
-			get {
-				return Setup.MulticoreScheduler;
-			}
-		}
-		public IMulticoreProcess Current
+		ProcessAPI.Linux.Process process;
+		public MulticoreProcess(ProcessAPI.Linux.Process p)
 		{
-			get {
-				return MulticoreScheduler.CurrentProcess;
-			}
+			process = p;
 		}
 		public int WaitForExit ()
 		{
@@ -32,6 +31,11 @@ namespace ProcessAPI
 		{
 			throw new NotImplementedException ();
 		}
+		public IMulticoreScheduler MulticoreScheduler {
+			get {
+				throw new NotImplementedException ();
+			}
+		}
 		public int Id {
 			get {
 				throw new NotImplementedException ();
@@ -47,7 +51,5 @@ namespace ProcessAPI
 				throw new NotImplementedException ();
 			}
 		}
-		#endregion
 	}
 }
-

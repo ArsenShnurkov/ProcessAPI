@@ -9,6 +9,13 @@ namespace ProcessAPI
 		}
 
 		#region IMulticoreScheduler implementation
+
+		public IMulticoreProcess Start (IProcessStartInfo psi)
+		{
+			var res = ProcessAPI.Linux.Process.Start ();
+			return new MulticoreProcess(res);
+		}
+
 		public IMulticoreProcess CurrentProcess {
 			get {
 				throw new NotImplementedException ();

@@ -11,7 +11,7 @@ namespace ProcessAPI
 		public Setup ()
 		{
 		}
-		public static IMulticoreScheduler MulticoreScheduler
+		public static IMulticoreScheduler Scheduler
 		{
 			get{
 				return MulticoreSchedulerAPI;

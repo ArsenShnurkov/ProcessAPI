@@ -10,6 +10,11 @@ namespace ProcessAPI
 
 		#region IMultiprocessorScheduler implementation
 
+		public IMultiprocessorProcess Start (IProcessStartInfo psi)
+		{
+			throw new NotImplementedException ();
+		}
+
 		public IMultiprocessorProcess CurrentProcess {
 			get {
 				throw new NotImplementedException ();

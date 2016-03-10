@@ -7,6 +7,7 @@ namespace ProcessAPI
 		IMulticlusterProcess CurrentProcess {get ;}
 		int GetAffinity(IMulticlusterProcess p);
 		void SetAffinity(IMulticlusterProcess p, ClusterSet affinity);
+		IMulticlusterProcess Start(IProcessStartInfo psi);
 	}
 }
 

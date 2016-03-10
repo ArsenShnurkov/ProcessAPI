@@ -10,6 +10,11 @@ namespace ProcessAPI
 
 		#region IMulticlusterScheduler implementation
 
+		public IMulticlusterProcess Start (IProcessStartInfo psi)
+		{
+			throw new NotImplementedException ();
+		}
+
 		public IMulticlusterProcess CurrentProcess {
 			get {
 				throw new NotImplementedException ();
